@@ -1,0 +1,111 @@
+main {
+    padding-top: 25px;
+    display: grid;
+    grid-template-areas:'h h h'
+                        'a a n'
+                        'f f f';
+    width: 85%;
+    margin: auto;
+}
+
+body {
+    background-image: url(design/teglafal.jpg);
+    }
+header{
+    grid-area: h;
+    background-image: url(design/beer-new_401732638.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    text-align: center;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+p {
+    color: white;
+}
+
+article {
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+}
+
+nav {
+    grid-area: n;
+    background-color: grey;
+}
+
+footer{
+    grid-area: f;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+    
+li a {
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    color: darkred;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    text-align: center;
+}
+
+table {
+    color: white;
+}
+table tr,td {
+    border: 1px solid gray;
+}
+tr:nth-child(odd) {
+    background-color: black;
+}
+tr:nth-child(even) {
+    background-color: gray;
+}
+label {
+    color: white;
+}
+.a {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+fieldset {
+    border: 1px solid darkred;
+}
+legend {
+    color: white;
+}
+.g {
+    border: none;
+}
+img {
+    
+}
+@media screen and (max-width: 800px) {
+    main {
+        display: grid;
+        grid-template-areas:    'h'
+                                'n'
+                                'a'
+                                'f';
+    }
+    header {
+        height: 75px;
+        background-color: black;
+        background-image: none;
+        text-align: center;
+    }
+}

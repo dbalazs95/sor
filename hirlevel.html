@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dávid Balázs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header class="h">
+            <h1>HA KELL EGY JÓ SÖR...</h1>
+        </header>
+
+        <article class="a">
+            <fieldset>
+                <legend>Hírlevél feliratkozás</legend>
+                <label for="vnev">Vezetéknév:</label>  <input type="text"><br><br>
+                <label for="knev">Keresztnév:</label>  <input type="text"><br><br>
+                <label for="email">Email:</label>  <input type="email"><br><br>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Szereti a sört?</legend>
+                <input type="radio" id="igen" name="szereti" value="igen"> <label for="igen">Igen</label><br>
+                <input type="radio" id="nem" name="szereti" value="nem"> <label for="nem">Nem</label>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Melyik a kedvenc márkája?</legend>
+                <input type="checkbox" id="sop" name="fav"> <label for="S">Soproni</label><br>
+                <input type="checkbox" id="hei" name="fav"> <label for="H">Heineken</label><br>
+                <input type="checkbox" id="egy" name="fav"> <label for="E">Egyéb</label><br><br>
+            </fieldset>
+            <fieldset class="g">
+                <label for="kerdes">Írja meg kérdését!</label>
+                <textarea name="kerdes" id="kerdes" cols="15" rows="5"></textarea>
+            </fieldset>
+        </article>
+
+        <nav class="n">
+            <ul>
+                <li><a href="sorok.html">Sörök Fajtái</a></li>
+                <li><a href="index.html">Táblázat</a></li>
+                <li><a href="hirlevel.html">Hírlevél</a></li>
+            </ul>
+        </nav>
+
+        <footer class="f">
+            <p>Minden jog fenntartva!</p>
+        </footer>
+    </main>
+</body>
+</html>
